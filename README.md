@@ -13,7 +13,7 @@ The Node.js [Assert](https://nodejs.org/api/assert.html) module is a good start,
 
 ## Installation
 ~~~
-npm install dash-assert
+npm install dash-assert --save-dev
 ~~~
 
 ## Usage
