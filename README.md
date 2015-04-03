@@ -64,10 +64,10 @@ Assert that the predicate returns truthy for __all__ elements of the collection 
 Assert that all properties of the source are present on the object with equivalent values using [`_.isMatch`](https://lodash.com/docs#isMatch).
 
 ### assert.isTrue(value)
-Shortcut for `assert.strictEqual(value, true)`
+Shortcut for `assert.strictEqual(value, true)`.
 
 ### assert.isFalse(value)
-Shortcut for `assert.strictEqual(value, false)`
+Shortcut for `assert.strictEqual(value, false)`.
 
 ### assert.hasIntersect(array, otherArray)
 Assert that there is at least one value in common between the two arrays based on [`_.intersection`](https://lodash.com/docs#intersection) having a length greater than 0.
@@ -76,8 +76,7 @@ Assert that there is at least one value in common between the two arrays based o
 Assert that the two arrays do not intersect based on [`_.intersection`](https://lodash.com/docs#intersection) having a length equal to 0.
 
 ### assert.noDifferences(array, otherArray)
-Assert that there are no values that appear in one array but not in the other based on [`_.difference`](https://lodash.com/docs#difference).
-
+Assert that there are no differences between the two arrays based on [`_.difference`](https://lodash.com/docs#difference) having a length of 0.
 
 ### assert.matchesPattern(value, regex)
 Assert that the value passes a RegExp test.
