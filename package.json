@@ -1,0 +1,16 @@
+{
+  "name": "dash-assert",
+  "version": "1.0.0",
+  "description": "Assertion wrapper around lodash",
+  "main": "index.js",
+  "keywords": [
+    "lodash",
+    "assert",
+    "testing"
+  ],
+  "author": "David Von Lehman <https://github.com/dvonlehman>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.6.0"
+  }
+}
