@@ -19,20 +19,6 @@ assert.isObject = function(val) {
     throw new assert.AssertionError({message: "value is not an object"});
 };
 
-// Assert that the two values pass a deep equals check.
-// See https://lodash.com/docs#isEqual
-// assert.isEqual = function(value, other) {
-//   if (_.isEqual(value, other) === false)
-//     throw new assert.AssertionError({message: "value is not equal to other"});
-// };
-//
-// // Assert that value is not equal to other.
-// // See https://lodash.com/docs#isEqual
-// assert.notEqual = function(value, other) {
-//   if (_.isEqual(value, other) === true)
-//     throw new assert.AssertionError({message: "value is equal to other"});
-// }
-
 // Assert that all properties of the source are present on the object with equivalent values.
 // See https://lodash.com/docs#isMatch
 assert.isMatch = function(object, source) {
