@@ -37,15 +37,15 @@ assert.isError = function(value) {
 // though not necessarily in the same order. See https://lodash.com/docs#difference
 assert.noDifferences = function(array, otherArray) {
   if (!(_.isArray(array) && _.isArray(otherArray)))
-    throw new Error("Both arguments must be arrays"});
+    throw new Error("Both arguments must be arrays");
 
-  if (_.difference(array1, array2).length > 0)
+  if (_.difference(array, otherArray).length > 0)
     throw new assert.AssertionError({message: "Arrays have differences"});
 };
 
 // Assert that the two arrays intersect.
 assert.hasIntersect = function(array, otherArray) {
-  if (!(_.isArray(array) && _.isArray(otherArray))
+  if (!(_.isArray(array) && _.isArray(otherArray)))
     throw new Error("Both arguments must be arrays");
 
   if (_.intersection(array, otherArray).length === 0)
@@ -54,10 +54,10 @@ assert.hasIntersect = function(array, otherArray) {
 
 // Assert that the two arrays have no intersection.
 assert.noIntersect = function(array, otherArray) {
-  if (!(_.isArray(array) && _.isArray(otherArray))
+  if (!(_.isArray(array) && _.isArray(otherArray)))
     throw new Error("Both arguments must be arrays");
 
-  if (_.intersect(array, otherArray).length > 0)
+  if (_.intersection(array, otherArray).length > 0)
     throw new assert.AssertionError({message: "Arrays intersect"});
 }
 
@@ -68,7 +68,7 @@ assert.isArray = function(val) {
 };
 
 assert.isEmpty = function(value) {
-  if (_.isEmpty(value) === true)
+  if (_.isEmpty(value) === false)
     throw new assert.AssertionError({message: "value is not empty"});
 };
 
@@ -145,5 +145,5 @@ assert.isJSON = function(val) {
     }
   }
   if (valid !== true)
-    throw new assert.AssertionError({message: "Not valid json"});
+    throw new assert.AssertionError({message: "Not valid JSON"});
 };

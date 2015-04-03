@@ -9,8 +9,25 @@
     "testing"
   ],
   "author": "David Von Lehman <https://github.com/dvonlehman>",
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvonlehman/dash-assert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dvonlehman/dash-assert/issues"
+  },
+  "homepage": "https://github.com/dvonlehman/dash-assert",
   "dependencies": {
     "lodash": "^3.6.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.1"
   }
 }

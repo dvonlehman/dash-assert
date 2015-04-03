@@ -1,7 +1,13 @@
 # dash-assert
+
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
+
 A simple assertion wrapper library around [lodash](https://lodash.com).
 
-Maybe BDD style assertions are what the cool kids do, but some of us still prefer old style assert statements. Personally I find it easier to reason about my tests when the key lines actually begin with the word "assert". 
+Maybe BDD style assertions are what the cool kids do, but some of us still prefer old style assert statements. Personally I find it easier to reason about my tests when the key lines actually begin with the word "assert".
 
 The Node.js [Assert](https://nodejs.org/api/assert.html) module is a good start, but has limited expressiveness. Lodash offers a very expressive API that lends itself well to testing, so conditionally throwing an AssertionError based on the result of a lodash function feels like a natural fit.
 
@@ -84,13 +90,16 @@ Assert that the value passes a RegExp test.
 ### assert.isJSON(value)
 Assert that value is a string that does not throw an error when passed to `JSON.parse`.
 
+## Running Tests
+~~~
+npm test
+~~~
 
-
-
-
-
-
-
-
-
-
+[npm-image]: https://img.shields.io/npm/v/dash-assert.svg?style=flat
+[npm-url]: https://npmjs.org/package/dash-assert
+[travis-image]: https://img.shields.io/travis/dvonlehman/dash-assert.svg?style=flat
+[travis-url]: https://travis-ci.org/dvonlehman/dash-assert
+[coveralls-image]: https://img.shields.io/coveralls/dvonlehman/dash-assert.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/dvonlehman/dash-assert?branch=master
+[downloads-image]: https://img.shields.io/npm/dm/dash-assert.svg?style=flat
+[downloads-url]: https://npmjs.org/package/dash-assert
