@@ -1,6 +1,6 @@
 {
   "name": "dash-assert",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Assertion wrapper around lodash",
   "main": "index.js",
   "keywords": [
