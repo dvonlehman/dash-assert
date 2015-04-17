@@ -39,11 +39,17 @@ Assert that value is NaN using [`_.isNaN`](https://lodash.com/docs#isNaN).
 ### assert.isObject(value)
 Assert that value is an object using [`_.isObject`](https://lodash.com/docs#isObject).
 
+### assert.isString(value)
+Assert that value is a astring using [`_.isString`](https://lodash.com/docs#isString).
+
 ### assert.isArray(value)
 Assert that value is an array using [`_.isArray`](https://lodash.com/docs#isArray).
 
 ### assert.isEmpty(value)
 Assert that value is empty using [`_.isEmpty`](https://lodash.com/docs#isEmpty).
+
+### assert.isNotEmpty(value)
+Assert that the value is not empty using the inverse of [`_.isEmpty`](https://lodash.com/docs#isEmpty).
 
 ### assert.isError(value)
 Assert that the specified value in an `Error` type using [`_.isError`](https://lodash.com/docs#isError).
