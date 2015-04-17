@@ -13,11 +13,11 @@ The Node.js [Assert](https://nodejs.org/api/assert.html) module is a good start,
 
 ## Installation
 ~~~
-npm install dash-assert
+npm install dash-assert --save-dev
 ~~~
 
 ## Usage
-Since this library simply extends the Node.js [assert](https://nodejs.org/api/assert.html), you use it just the same as `assert.equal`, `assert.deepEqual`, `assert.ok`, etc.
+Since this library simply extends Node's [assert](https://nodejs.org/api/assert.html), use it right alongside `assert.equal`, `assert.throws`, `assert.ok`, etc.
 
 ~~~js
 var assert = require('assert');
