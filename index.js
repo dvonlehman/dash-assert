@@ -6,6 +6,11 @@ assert.isNumber = function(value) {
     throw new assert.AssertionError({message: "value is not a number"});
 };
 
+assert.isString = function(value) {
+  if (_.isString(value) === false)
+    throw new assert.AssertionError({message: "value is not a string"});
+};
+
 // Assert that the value is NaN. See https://lodash.com/docs#isNaN
 assert.isNaN = function(value) {
   if (_.isNaN(value) === false)
@@ -70,6 +75,11 @@ assert.isArray = function(val) {
 assert.isEmpty = function(value) {
   if (_.isEmpty(value) === false)
     throw new assert.AssertionError({message: "value is not empty"});
+};
+
+assert.isNotEmpty = function(value) {
+  if (_.isEmpty(value) === true)
+    throw new assert.AssertionError({message: "value is empty"});
 };
 
 assert.isDefined = function(val) {

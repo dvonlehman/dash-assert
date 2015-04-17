@@ -25,6 +25,14 @@ describe('dash-assert', function() {
     });
   });
 
+  it('isString', function() {
+    assert.isString('test');
+
+    assert.throws(function() {
+      assert.isString(1);
+    });
+  });
+
   it('isNaN', function() {
     assert.isNaN(NaN);
 
@@ -84,6 +92,19 @@ describe('dash-assert', function() {
       assert.isEmpty(1);
       assert.isEmpty([1]);
       assert.isEmpty({foo: 'test'});
+    });
+  });
+
+  it('isNotEmpty', function() {
+    assert.isNotEmpty('1');
+    assert.isNotEmpty([1]);
+    assert.isNotEmpty({foo: 'test'});
+
+    assert.throws(function() {
+      assert.isNotEmpty('');
+      assert.isNotEmpty(null);
+      assert.isNotEmpty([]);
+      assert.isNotEmpty({});
     });
   });
 
