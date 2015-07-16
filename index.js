@@ -44,6 +44,9 @@ assert.noDifferences = function(array, otherArray) {
   if (!(_.isArray(array) && _.isArray(otherArray)))
     throw new Error("Both arguments must be arrays");
 
+  if (array.length !== otherArray.length)
+    throw new assert.AssertionError({message: "Arrays are not the same length"});
+
   if (_.difference(array, otherArray).length > 0)
     throw new assert.AssertionError({message: "Arrays have differences"});
 };

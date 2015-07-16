@@ -63,6 +63,10 @@ describe('dash-assert', function() {
     assert.throws(function() {
       assert.noDifferences([1, 2, 3], [2, 3, 4]);
     });
+
+    assert.throws(function() {
+      assert.noDifferences([], [1, 2, 3]);
+    });
   });
 
   it('hasIntersect', function() {
