@@ -1,6 +1,6 @@
 {
   "name": "dash-assert",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Assertion wrapper around lodash",
   "main": "index.js",
   "keywords": [
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/dvonlehman/dash-assert",
   "dependencies": {
-    "lodash": "^3.6.0"
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
-    "istanbul": "^0.3.13",
+    "istanbul": "^0.4.2",
     "mocha": "^2.2.1"
   }
 }
