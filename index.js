@@ -13,6 +13,7 @@ var some = require("lodash.some");
 var isRegExp = require("lodash.isregexp");
 var intersection = require("lodash.intersection");
 var difference = require("lodash.difference");
+var includes = require("lodash.includes");
 
 assert.isNumber = function(value) {
   if (isNumber(value) === false)
