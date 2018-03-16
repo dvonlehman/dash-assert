@@ -1,18 +1,16 @@
 {
   "name": "dash-assert",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Assertion wrapper around lodash",
   "main": "index.js",
-  "keywords": [
-    "lodash",
-    "assert",
-    "testing"
-  ],
+  "keywords": ["lodash", "assert", "testing"],
   "author": "David Von Lehman <https://github.com/dvonlehman>",
   "scripts": {
     "test": "mocha --reporter spec --bail --check-leaks test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "test-cov":
+      "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis":
+      "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   },
   "license": "MIT",
   "repository": {
@@ -24,24 +22,24 @@
   },
   "homepage": "https://github.com/dvonlehman/dash-assert",
   "dependencies": {
-    "lodash.difference": "^4.2.0",
-    "lodash.every": "^4.3.0",
-    "lodash.intersection": "^4.1.2",
-    "lodash.isarray": "^4.0.0",
-    "lodash.isempty": "^4.2.1",
+    "lodash.difference": "^4.5.0",
+    "lodash.every": "^4.6.0",
+    "lodash.includes": "^4.3.0",
+    "lodash.intersection": "^4.4.0",
+    "lodash.isempty": "^4.4.0",
     "lodash.iserror": "^3.1.1",
-    "lodash.ismatch": "^4.1.4",
+    "lodash.ismatch": "^4.4.0",
     "lodash.isnan": "^3.0.2",
     "lodash.isnull": "^3.0.0",
     "lodash.isnumber": "^3.0.3",
     "lodash.isobject": "^3.0.2",
-    "lodash.isregexp": "^3.0.5",
+    "lodash.isregexp": "^4.0.1",
     "lodash.isstring": "^4.0.1",
     "lodash.isundefined": "^3.0.1",
-    "lodash.some": "^4.3.0"
+    "lodash.some": "^4.6.0"
   },
   "devDependencies": {
-    "istanbul": "^0.4.2",
-    "mocha": "^2.2.1"
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.4"
   }
 }
